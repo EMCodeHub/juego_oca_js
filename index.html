@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de la Oca</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="logica.js"></script>
+
+
+
+  </head>
+  <body>
+    <h1 class="titulo">Juego de la Oca</h1>
+    <div class="estiloABC">
+      <div class="contenedorprincipal">
+        <div class="tablero">
+          <div class="estiloDEF">
+            <img src="imagenes/tablero.jpg" width="100%" height="100%" />
+          </div>
+          <div class="ficharoja"></div>
+          <div class="fichaazul"></div>
+          <div class="fichaverde"></div>
+          <div class="fichaamarilla"></div>
+          <div class="estiloGHI">
+
+
+            
+            <button onclick="nuevojuego()" class="estiloJKL">Partida nueva</button>
+
+
+            <button id="reiniciarpartidabuton" onclick="reiniciarpartida()">
+              Reiniciar Partida
+            </button>
+
+
+            <div id="podium" class="estiloMNO"></div>
+            <div id="mensajeGanador" class="estiloPQR"></div>
+            <div class="estiloSTU">Resultados en tiempo real</div>
+            <div id="resultadostiemporeal" class="estiloVWX"></div>
+            <div id="partidafinalizada" class="estiloYZA">
+              La partida ha finalizado
+            </div>
+
+
+
+            <label>
+              Elige Jugadores
+              <select id="numeroJugadores" class="estiloBCD">
+                <option value="0">Sin jugadores</option>
+                <option value="2">2 jugadores</option>
+                <option value="3">3 jugadores</option>
+                <option value="4">4 jugadores</option>
+              </select>
+            </label>
+
+
+
+            <div id="seleccionFichas"></div>
+
+            <br /><br />
+            <div class="estiloEFG">
+              <button
+                id="iniciarpartida"
+                class="estiloHIJ"
+                onclick="construyeobjetos(); asignaturnos(); creaarray();"
+              >
+                Iniciar partida
+              </button>
+
+
+
+              
+            </div>
+            <div id="turnos" class="estiloKLM"></div>
+            <div class="estiloNOP">
+              <div id="botonrojoturno">
+                <button
+                  id="botonrojo"
+                  class="botonrojo estiloQRS"
+                  onclick="dadosroja()"
+                >
+                  Lanzar dados ficha roja
+                  <img
+                    src="./imagenes/descarga.jpeg"
+                    alt="Descripción de la imagen"
+                    width="60"
+                    height="60"
+                    class="estiloTUV"
+                  />
+                </button>
+              </div>
+              <div id="botonazulturno">
+                <button
+                  id="botonazul"
+                  class="botonazul estiloQRS"
+                  onclick="dadosazul()"
+                >
+                  Lanzar dados ficha azul
+                  <img
+                    src="./imagenes/descarga.jpeg"
+                    alt="Descripción de la imagen"
+                    width="60"
+                    height="60"
+                    class="estiloTUV"
+                  />
+                </button>
+              </div>
+              <div id="botonverdeturno">
+                <button
+                  id="botonverde"
+                  class="botonverde estiloQRS"
+                  onclick="dadosverde()"
+                >
+                  Lanzar dados ficha verde
+                  <img
+                    src="./imagenes/descarga.jpeg"
+                    alt="Descripción de la imagen"
+                    width="60"
+                    height="60"
+                    class="estiloTUV"
+                  />
+                </button>
+              </div>
+              <div id="botonamarillaturno">
+                <button
+                  id="botonamarilla"
+                  class="botonamarilla estiloQRS"
+                  onclick="dadosamarilla()"
+                >
+                  Lanzar dados ficha amarilla
+                  <img
+                    src="./imagenes/descarga.jpeg"
+                    alt="Descripción de la imagen"
+                    width="60"
+                    height="60"
+                    class="estiloTUV"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

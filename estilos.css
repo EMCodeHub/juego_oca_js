@@ -1,0 +1,246 @@
+
+
+
+
+
+
+.contenedorprincipal {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 1200px;
+  height: 400px;
+
+  flex-direction: column;
+}
+
+.titulo {
+  font-size: 30px;
+  color: black;
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+}
+
+.tablero {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.ficharoja {
+  width: 22px;
+  height: 22px;
+  background-color: #db4234; /* Color de fondo */
+  border-radius: 100%; /* Hace que el div sea redondo */
+  position: relative; /* Esto es importante para que top funcione */
+  top: -200px; /* Mueve el div 300px hacia arriba */
+  left: 8px;
+  z-index: 999;
+}
+
+.fichaazul {
+  width: 22px;
+  height: 22px;
+  background-color: #3434db; /* Color de fondo */
+  border-radius: 100%; /* Hace que el div sea redondo */
+  position: relative; /* Esto es importante para que top funcione */
+  top: -190px; /* Mueve el div 300px hacia arriba */
+  left: 8px;
+}
+
+
+
+.fichaverde {
+  width: 22px;
+  height: 22px;
+  background-color: #36b029; /* Color de fondo */
+  border-radius: 100%; /* Hace que el div sea redondo */
+  position: relative; /* Esto es importante para que top funcione */
+  top: -260px; /* Mueve el div 300px hacia arriba */
+  left: 8px;
+}
+
+
+
+
+.fichaamarilla {
+  width: 22px;
+  height: 22px;
+  background-color: #abb029; /* Color de fondo */
+  border-radius: 100%; /* Hace que el div sea redondo */
+  position: relative; /* Esto es importante para que top funcione */
+  top: -250px; /* Mueve el div 300px hacia arriba */
+  left: 8px;
+}
+
+
+
+
+
+.dadoficharoja{
+
+
+background-color: red;
+max-width: 100px;
+border-radius: 20px;
+margin-bottom: 40px;
+height: 40px;
+
+
+}
+
+
+.dadofichaazul{
+
+
+    background-color: rgb(0, 30, 255);
+    max-width: 100px;
+    border-radius: 20px;
+    height: 40px;
+    
+    }
+
+
+
+    .botonazul
+    .botonverde
+    .botonamarilla
+    .botonrojo {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        border: 2px solid #007bff; /* Borde del botón */
+        border-radius: 5px; /* Borde redondeado */
+        background-color: #007bff; /* Color de fondo del botón */
+        color: #ffffff; /* Color del texto */
+        transition: background-color 0.3s, color 0.3s; /* Transición suave */
+        max-width: 200px;
+        margin-bottom: 40px;
+    }
+
+    /* Estilos cuando el cursor pasa por encima */
+    .boton:hover {
+        background-color: #0056b3; /* Nuevo color de fondo */
+        color: #ffffff; /* Nuevo color del texto */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.estiloABC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.estiloDEF {
+  height: 400px;
+  margin-top: 900px;
+  margin-bottom: 0;
+}
+.estiloGHI {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  position: relative;
+  top: -100px;
+}
+.estiloJKL {
+  margin-bottom: 20px;
+}
+.estiloMNO {
+  margin-top: 20px;
+}
+.estiloPQR {
+  margin-bottom: 40px;
+  background: green;
+  border-radius: 30px;
+  color: white;
+  height: 20px;
+  padding: 10px;
+  display: none;
+}
+.estiloSTU {
+  display: flex;
+  justify-content: center;
+}
+.estiloVWX {
+  background-color: #ededff;
+  color: black;
+  height: 100px;
+  border-radius: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.estiloYZA {
+  background-color: #ed4908;
+  color: black;
+  height: 50px;
+  border-radius: 30px;
+  width: 400px;
+  display: none;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  align-content: center;
+}
+.estiloBCD {
+  width: 200px;
+  border-radius: 30px;
+  height: 30px;
+}
+.estiloEFG {
+  margin-bottom: 20px;
+}
+.estiloHIJ {
+  width: 200px;
+}
+.estiloKLM {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.estiloNOP {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+.estiloQRS {
+  display: none;
+  margin-right: 20px;
+}
+.estiloTUV {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+
+
